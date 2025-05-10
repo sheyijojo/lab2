@@ -25,13 +25,13 @@ jobs:
       - name: Printing Custom Message
         run: |
            echo ${{ inputs.custom_message}}
-           
+
       - name: ACTIONS_STEP_DEBUG 
         run: |
-           echo ${{ vars.DEBUG  }}
+           echo ${{ vars.ACTIONS_STEP_DEBUG}}
 
       - name: Printing run-job boolean value
-        if: ${{ inputs.run-job == 'true' }}
+        if: ${{ inputs.run-job == true }}
         run: |
            echo ${{ inputs.run-job }}
   
