@@ -11,7 +11,7 @@ on:
 
           custom_message:
            type: string
-           required: true
+           required: false
            description: 'Enter a custom message'
 
 jobs:
